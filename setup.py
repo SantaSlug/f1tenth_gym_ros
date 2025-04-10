@@ -26,7 +26,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'gym_bridge = f1tenth_gym_ros.gym_bridge:main'
+            'gym_bridge = f1tenth_gym_ros.gym_bridge:main',
+            'lidar_orient = f1tenth_gym_ros.lidar_orientation:main',
+            'emergency_brake = f1tenth_gym_ros.emergency_breaking:main',
+            'gap_follow = f1tenth_gym_ros.follow_the_gap:main',
+            'pure_pursuit = f1tenth_gym_ros.pure_pursuit:main',
+            'wall_follow = f1tenth_gym_ros.wall_follower:main'
         ],
     },
 )

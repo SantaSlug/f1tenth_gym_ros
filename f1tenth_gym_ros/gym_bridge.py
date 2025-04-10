@@ -31,12 +31,12 @@ from geometry_msgs.msg import Twist
 from geometry_msgs.msg import TransformStamped
 from geometry_msgs.msg import Transform
 from geometry_msgs.msg import Quaternion
-from ackermann_msgs.msg import AckermannDriveStamped
+from ackermann_msgs.msg import AckermannDriveStamped # type: ignore
 from tf2_ros import TransformBroadcaster
 
-import gym
+import gym # type: ignore
 import numpy as np
-from transforms3d import euler
+from transforms3d import euler # type: ignore
 
 class GymBridge(Node):
     def __init__(self):

@@ -44,6 +44,8 @@ def generate_launch_description():
         name='bridge',
         parameters=[config]
     )
+
+
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
@@ -89,6 +91,7 @@ def generate_launch_description():
     ld.add_action(nav_lifecycle_node)
     ld.add_action(map_server_node)
     ld.add_action(ego_robot_publisher)
+    
     if has_opp:
         ld.add_action(opp_robot_publisher)
 
